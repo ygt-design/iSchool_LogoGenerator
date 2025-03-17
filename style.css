@@ -1,0 +1,45 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+  font-weight: 100;
+  font-size: 1rem;
+  border: 2px solid black;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 100px;
+  animation: rotate 1.2s ease infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(5deg);
+  }
+  30% {
+    transform: rotate(-5deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}
+
+body{
+  height: 100vh;
+}
+
+canvas {
+  display: block;
+}
